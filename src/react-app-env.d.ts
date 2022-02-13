@@ -1,6 +1,6 @@
 /// <reference types="react-scripts" />
 
-declare module 'jazzicon' {
+declare module '@metamask/jazzicon' {
   export default function(diameter: number, seed: number): HTMLElement
 }
 
@@ -26,7 +26,7 @@ declare module 'multihashes' {
   declare function toB58String(hash: Uint8Array): string
 }
 
-interface BinanceChain {
+interface AvalancheChain {
   send: unknown
   enable: () => Promise<string[]>
   on?: (method: string, listener: (...args: any[]) => void) => void
