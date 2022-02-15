@@ -24,7 +24,7 @@ const useAvaxPrice = () => {
         const solarObj = await SolarAvaxPairContract.methods.getReserves().call();
         if (!new BigNumber(solarObj._reserve1).eq(new BigNumber(0))) {
           
-          const solarPrice = new BigNumber(solarObj._reserve0).div(solarObj._reserve1).times(avaxPrice)
+          const SolarPrice = new BigNumber(solarObj._reserve0).div(solarObj._reserve1).times(avaxPrice)
           if (!avaxPrice.isEqualTo(price)) {
             setPrice(avaxPrice.toNumber())
           }
