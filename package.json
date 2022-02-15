@@ -1,6 +1,7 @@
 {
   "name": "@moonwalkerswap/interface",
   "description": "Moonwalkerswap Interface",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@crowdin/crowdin-api-client": "^1.8.16",
@@ -48,10 +49,11 @@
     "jsbi": "^3.1.6",
     "lodash.flatmap": "^4.5.0",
     "moonwalkerswap-avalanche-sdk": "^2.0.4",
-    "moonwalkerswap-default-token-lists": "^1.0.8",
+    "moonwalkerswap-default-token-lists": "^1.0.9",
     "moonwalkerswap-uikit-avalanche": "^1.0.3",
     "moonwalkerswap-v2-core": "^1.0.4",
     "multicodec": "^2.0.0",
+    "multiformats": "^9.6.4",
     "multihashes": "^3.0.1",
     "polished": "^3.3.2",
     "react": "^17.0.1",
@@ -117,6 +119,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "license": "MIT"
+  }
 }

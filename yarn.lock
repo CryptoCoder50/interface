@@ -12578,7 +12578,7 @@ moonwalkerswap-avalanche-sdk@^2.0.4:
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-moonwalkerswap-default-token-lists@^1.0.6, moonwalkerswap-default-token-lists@^1.0.8:
+moonwalkerswap-default-token-lists@^1.0.6, moonwalkerswap-default-token-lists@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/moonwalkerswap-default-token-lists/-/moonwalkerswap-default-token-lists-1.0.9.tgz#ed3daeb4ce92076f78d88fc296b10b40497d7c25"
   integrity sha512-ZN3egmpR/QpAspJPefNGt5BQulQtJb8MErZpMbTKiV1uvdyZXkhuqZu1L6Ain+bzgsCw/v5yyKlOn3hc4Wi+Rw==
@@ -13300,6 +13300,11 @@ multiformats@^9.4.2, multiformats@^9.6.3:
   version "9.6.3"
   resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.6.3.tgz#9f2aef711ddd0e7b05a1b5f1ad70928544c8c190"
   integrity sha512-yfXKI66fL0nFzt0nJl26i4wV1qAqbAEIBvfFbkbsne9GrLz6IHvHUoRyxUtlJcdP181ssOgjama6E/VSk4pbrA==
+
+multiformats@^9.6.4:
+  version "9.6.4"
+  resolved "https://registry.yarnpkg.com/multiformats/-/multiformats-9.6.4.tgz#5dce1f11a407dbb69aa612cb7e5076069bb759ca"
+  integrity sha512-fCCB6XMrr6CqJiHNjfFNGT0v//dxOBMrOMqUIzpPc/mmITweLEyhvMpY9bF+jZ9z3vaMAau5E8B68DW77QMXkg==
 
 multihashes@^0.4.15, multihashes@~0.4.15:
   version "0.4.21"

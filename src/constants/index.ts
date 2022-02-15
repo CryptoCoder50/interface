@@ -11,7 +11,7 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const DAIe = new Token(ChainId.AVALANCHE, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
+export const DAIe = new Token(ChainId.AVALANCHE, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAIe', 'Dai Stablecoin')
 export const BUSDe = new Token(ChainId.AVALANCHE, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
 export const USDTe = new Token(ChainId.AVALANCHE, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
 export const USDC = new Token(ChainId.AVALANCHE, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
@@ -20,7 +20,7 @@ export const ETH = new Token(
   '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
   18,
   'ETH',
-  'Binance-Peg Ethereum Token'
+  'Ethereum Token'
 )
 
 const WETH_ONLY: ChainTokenList = {
@@ -153,4 +153,4 @@ export const MIN_ETH: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16))
 export const BETTER_TRADE_LINK_THRESHOLD = new Percent(JSBI.BigInt(75), JSBI.BigInt(10000))
 
 // the Moonwalkerswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = `'https://unpkg.com/moonwalkerswap-default-token-lists@1.0.6/src/tokens/avalanche.json'`
+export const DEFAULT_TOKEN_LIST_URL = `'https://unpkg.com/moonwalkerswap-default-token-lists@1.0.9/src/tokens/avalanche.json'`

@@ -1,5 +1,5 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
-import { save, load } from 'redux-localstorage-simple'
+import { configureStore } from '@reduxjs/toolkit'
+import { load, save } from 'redux-localstorage-simple'
 
 import application from './application/reducer'
 import { updateVersion } from './global/actions'
@@ -39,8 +39,10 @@ const store = configureStore({
     lists,
     toasts
   },
-  middleware: [...getDefaultMiddleware({ thunk: false }), save({ states: PERSISTED_KEYS })],
-  preloadedState: loadedState,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ thunk: true })
+      .concat(save({ states: PERSISTED_KEYS, debounce: 1000 })),
+  preloadedState: load({ states: PERSISTED_KEYS, disableWarnings: process.env.NODE_ENV === 'test' }),
 })
 
 store.dispatch(updateVersion())
